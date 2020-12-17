@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MomaApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+  <nav>
+    <h1>MoMA</h1>
+    <%= link_to 'Artists', artists_path %>
+    |
+    <%= link_to 'Create Artists', new_artist_path %>
+    <hr>
+  </nav>
+  <body>
+    <%= yield %>
+  </body>
+  <footer>
+    <hr>
+    &copy; Cool Artists Ltd
+  </footer>
+</html>

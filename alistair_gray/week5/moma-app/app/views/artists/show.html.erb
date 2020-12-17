@@ -1,0 +1,29 @@
+<h2>Artist Name: <%= @artist.name %></h2>
+<div class="artist_show">
+    <p>
+      <strong>Nationality:</strong>
+      <%= @artist.nationality %>
+    </p>
+    <p>
+      <strong>Date of Birth:</strong>
+      <%= @artist.dob %>
+    </p>
+    <p>
+      <strong>Period:</strong>
+      <%= @artist.period %>
+    </p>
+    <p>
+      <strong>Roundness:</strong>
+      <%= @artist.roundness %>
+    </p>
+    <p>
+      <strong>Biography:</strong>
+      <%= @artist.bio %>
+    </p>
+    </div>
+<%= image_tag @artist.image, alt:@artist.name, class: 'artist' %>
+
+<br>
+<%= link_to 'Edit', edit_artist_path %>
+|
+<%= link_to 'Delete', artist_path(@artist.id), method: 'delete' %>

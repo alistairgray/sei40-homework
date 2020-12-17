@@ -1,0 +1,7 @@
+form {
+  width: 50%;
+}
+
+.field_with_errors {
+  background-color: orange;
+}

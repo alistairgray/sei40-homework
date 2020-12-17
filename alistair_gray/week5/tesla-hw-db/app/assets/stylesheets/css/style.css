@@ -1,8 +1,8 @@
 .index {
   border: solid 1px red;
-  width: 100vw;
-  height: 100vh;
-  background-image: url(<%= assets_path 's3xy.jpg' %>);
+  width: 98vw;
+  height: 75vh;
+  background-image: url(/assets/s3xy.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11,7 +11,6 @@
 ul {
   display: inline;
   text-align: center;
-  top: 5%;
   position: relative;
   left: -2%;
 }
@@ -27,11 +26,12 @@ body {
   background-color: #222222;
   color: white;
   text-align: center;
+  font-family: 'gotham', sans-serif;
 }
 
 a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-weight: bold;
 }
 

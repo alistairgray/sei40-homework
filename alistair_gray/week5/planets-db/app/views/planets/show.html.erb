@@ -1,0 +1,14 @@
+<h1>Here is the planet: <%= @planet.name%></h1>
+
+
+<p>
+  <strong>Orbit:</strong>
+  <%= @planet.orbit %> earth orbits
+</p>
+
+
+<%= image_tag @planet.image_url, alt: @planet.name %>
+<br>
+<%= link_to 'Edit Planet', edit_planet_path(@planet.id)%>
+|
+<%= link_to 'Destroy Planet', destroy_planet_path(@planet.id)%>

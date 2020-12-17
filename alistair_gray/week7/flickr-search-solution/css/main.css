@@ -1,0 +1,34 @@
+#results img {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+#results img:hover{
+  border: solid blue 5px;
+}
+
+#pagination {
+  display: none;
+  margin: 20px 0;
+}
+
+#details {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#title {
+  display: inline-block;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 5vh;
+  padding: 10px;
+  background-color: rgba(0,0,0, 0.8);
+  color: white;
+  font-size: 16pt;
+}
